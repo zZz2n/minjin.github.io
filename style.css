@@ -1,0 +1,24 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #FEFDED;
+}
+#header{
+    font-size: 12pt;
+    font-family: 'PT Sans', Arial, Sans-serif;
+    position: relative;
+    background-color: #FA7070;
+}
+
+#header li{
+    display: inline;
+}
+
+#header ul{
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    width: auto;
+    line-height: 50px;
+    height: 50px;
+}
