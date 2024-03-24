@@ -1,24 +1,163 @@
-body{
-    width: 100%;
-    margin: 0;
-    background-color: #FEFDED;
-}
-#header{
-    font-size: 12pt;
-    font-family: 'PT Sans', Arial, Sans-serif;
-    position: relative;
-    background-color: #FA7070;
-}
+@media only screen and (min-width: 400px) {
 
-#header li{
-    display: inline;
-}
+    html{
+        scroll-behavior: smooth;
+        width: 100%;
+        height: 100%;
+      }
 
-#header ul{
-    text-align: center;
-    padding: 0;
-    margin: 0 auto;
-    width: auto;
-    line-height: 50px;
-    height: 50px;
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: #FEFDED;
+    }
+    #header{
+        width: 100%;
+        font-size: 20px;
+        font-family: 'PT Sans', Arial, Sans-serif;
+        background-color: #FA7070;
+        align-items: center;
+        position: fixed;
+    }
+    
+    #header li{
+        display: inline;
+        list-style: none;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    #header ul{
+        text-align: center;
+        margin: 0 auto;
+        width: auto;
+        line-height: 50px;
+        height: 50px;
+    }
+    
+    #header a{
+        text-decoration: none;
+    }
+    
+    #header a:link{
+        color: black;
+    }
+    
+    #header a:visited{
+        color: black;
+    }
+    
+    #header a:hover{
+        color: #FEFDED;
+        font-size: 120%;
+    }
+    
+    #header a:active{
+        color: #FEFDED;
+        font-size: 120%;
+    }
+
+
+    #home{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        aspect-ratio: 16/9;
+        justify-content: center;
+    }
+
+    #homeimage{
+        width: 80%;
+        background-image: url(./슬라이드1.PNG);
+        background-size: cover;
+        aspect-ratio: 16/9;
+    }
+
+    #profile{
+        width: 100%;
+        background-color: #A1C398;
+        aspect-ratio: 16/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #profile2{
+        width: 72%;
+        background-color: #FEFDED;
+        aspect-ratio: 16/8;
+    }
+
+    #pro1{
+        display: flex;
+        width: 40%;
+        height: 100%;
+        float: left;
+        align-items: center;
+        justify-content: end;
+    }
+
+    #profilephoto{
+        width: 80%;
+        background-image: url(./mj_photo.png);
+        background-size: cover;
+        aspect-ratio: 1/1;
+    }
+
+    #pro2{
+        float: right;
+        width: 60%;
+        height: 55%;
+        display: flex;
+        align-items: center;
+    }
+
+    .infor{
+        width: 30%;
+        height: 80%;
+        padding-left: 5%;
+        padding-top: 20%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    .infor h5{
+        display: inline-block;
+        background-color: #FA7070;
+        border-radius: 10%;
+        font-size: 1vmax;
+    }
+
+    .infor .subtitle{
+        font-weight: bold;
+    }
+
+    .infor p{
+        display: inline;
+        font-size: 0.9vmax;
+    }
+
+    #pro3{
+        float: right;
+        width: 60%;
+        height: 45%;
+        padding-top: 0;
+    }
+
+    #pro3 h1{
+        color: #FA7070;
+        display: inline;
+        padding-left: 5%;
+        font-size: 5vmax;
+    }
+
+    #pro3 p{
+        color: black;
+        padding-left: 5%;
+        display: inline;
+        font-size: 1.2vmax;
+        font-weight: 300;
+    }
 }
