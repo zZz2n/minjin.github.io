@@ -13,6 +13,7 @@
         background-color: #FEFDED;
     }
     #header{
+        z-index: 2;
         width: 100%;
         font-size: 20px;
         font-family: 'PT Sans', Arial, Sans-serif;
@@ -160,4 +161,52 @@
         font-size: 1.2vmax;
         font-weight: 300;
     }
+
+    #life{
+        width: 100%;
+        position: flex;
+    }
+
+    #life h2{
+        position: relative;
+        font-size: 2vmin;
+        color: #FA7070;
+        line-height: 1;
+    }
+
+    #life h2::before{
+        content: "";
+        position: absolute;
+        left: -48px; top: 50%; transform: translateY(-50%);
+        width: 17px;height: 17px; border-radius: 100%;
+        background-color: #Ffffff;
+        border: 5px solid #FA7070;
+        box-sizing: border-box;
+    }
+
+    #life div{
+        position:relative;
+        width: 50%;
+        padding: 0 0 0 48px;
+        margin: 0;
+        border: 0;
+        background-color: ;
+    }
+
+    #life div::before{
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #A1C398;
+    }
+
+    #life div:last-child:before{
+        content: none;
+    }
+
+    #life ul{padding: 0px 0 74px;}
+    #life li{font-size: 1.5vmin; line-height: 29px;}
 }
